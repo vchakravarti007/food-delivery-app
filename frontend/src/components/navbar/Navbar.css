@@ -1,0 +1,94 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: px;
+  height: 80px;
+  padding-right: 80px;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+nav .nav-1 {
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  gap: 30px;
+}
+
+nav .nav-2 {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  gap: 10px;
+}
+
+.cart-icon img {
+  height: 30px;
+  width: 30px;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cart-icon {
+  height: 35px;
+  padding-top: 10px;
+  position: relative;
+  width: 37px;
+}
+
+.cart-icon span {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: orangered;
+  font-weight: 600;
+  height: 20px;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.expand {
+  height: 300px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+
+  .nav-1 {
+    visibility: hidden;
+  }
+
+  .visible {
+    flex-direction: column;
+    visibility: visible;
+    line-height: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-2 {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+}

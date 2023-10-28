@@ -1,0 +1,44 @@
+.latest-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  margin-top: 50px;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  width: 50%;
+  background: rgba(6, 6, 87, 0.705);
+}
+
+.category-text {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(16, 17, 9);
+  height: 50px;
+  width: fit-content;
+  padding: 0px 10px 0px 10px;
+  width: 80px;
+  color: #fff;
+  border-radius: 10px;
+  transition: ease-out 0.4s;
+}
+
+.category-text:hover {
+  background-color: rgb(255, 60, 0);
+}
+
+.latest-nav div {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .latest-nav {
+    margin-top: 30px;
+    width: 90%;
+    gap: 10px;
+  }
+}
